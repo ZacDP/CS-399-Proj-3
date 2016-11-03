@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="light_controls">Light Controls</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="thermostat_controls">Thermostat Controls</string>
+    <string name="hot">Heat</string>
+    <string name="cold">Cool</string>
+    <string name="lock_controls">Lock Controls</string>
+    <string name="lock">Lock</string>
+    <string name="unlock">Un-Lock</string>
+</resources>
