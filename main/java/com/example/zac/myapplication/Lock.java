@@ -15,7 +15,7 @@ public class Lock extends AppCompatActivity {
 
     /** Need to figure out how to switch this to scrolling */
     public void nextScreen(View view) {
-        Intent intent = new Intent(this, DeviceList.class);
+        Intent intent = new Intent(this, Light.class);
         startActivity(intent);
     }
 

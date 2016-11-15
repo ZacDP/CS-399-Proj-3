@@ -31,7 +31,7 @@ public class Thermostat extends AppCompatActivity {
     }
 
     public void prevScreen(View view) {
-        Intent intent = new Intent(this, DeviceList.class);
+        Intent intent = new Intent(this, Light.class);
         startActivity(intent);
     }
 

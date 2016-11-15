@@ -25,6 +25,21 @@ public class DeviceList extends AppCompatActivity {
         Intent intent = new Intent(this, Lock.class);
         startActivity(intent);
     }
+
+    public void LightScreen(View view) {
+        Intent intent = new Intent(this, Light.class);
+        startActivity(intent);
+    }
+
+    public void ThermostatScreen(View view) {
+        Intent intent = new Intent(this, Thermostat.class);
+        startActivity(intent);
+    }
+
+    public void LockScreen(View view) {
+        Intent intent = new Intent(this, Lock.class);
+        startActivity(intent);
+    }
 }
 /*
 public class DeviceList extends AppCompatActivity implements OnClickListener {

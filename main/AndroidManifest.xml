@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Thermostat" />
-        <activity android:name=".Lock"></activity>
+        <activity android:name=".Lock" />
+        <activity android:name=".Light"></activity>
     </application>
 
 </manifest>

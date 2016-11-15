@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">iHome</string>
     <string name="light_controls">Light Controls</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>

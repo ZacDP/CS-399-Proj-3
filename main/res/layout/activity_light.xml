@@ -7,45 +7,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.zac.myapplication.DeviceList">
-
-
+    tools:context="com.example.zac.myapplication.Light">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Device List"
+        android:text="@string/light_controls"
         android:id="@+id/textView"
         android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView"
+        android:onClick="nextScreen"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lights"
-        android:id="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:onClick="LightScreen"/>
+        android:text="Prev"
+        android:id="@+id/button"
+        android:onClick="prevScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView" />
 
-    <Button
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thermostat"
-        android:id="@+id/button4"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_above="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:onClick="ThermostatScreen"/>
+        android:onClick="change_image"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lock"
-        android:id="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
-        android:onClick="LockScreen"/>
+
+
 
 </RelativeLayout>
