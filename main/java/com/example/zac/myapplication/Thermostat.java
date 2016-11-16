@@ -8,10 +8,10 @@ import android.widget.NumberPicker;
 
 public class Thermostat extends AppCompatActivity {
 
-
     NumberPicker nopicker = null;
 
-    @Override
+
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thermostat);
@@ -23,6 +23,9 @@ public class Thermostat extends AppCompatActivity {
         nopicker.setWrapSelectorWheel(false);
     }
 
+
+
+
         /** Need to figure out how to switch this to scrolling */
 
     public void nextScreen(View view) {
@@ -32,6 +35,11 @@ public class Thermostat extends AppCompatActivity {
 
     public void prevScreen(View view) {
         Intent intent = new Intent(this, Light.class);
+        startActivity(intent);
+    }
+
+    public void DeviceList(View view) {
+        Intent intent = new Intent(this, DeviceList.class);
         startActivity(intent);
     }
 
